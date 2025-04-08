@@ -1,2 +1,2 @@
-# mcp-server-agentops
+# agentops-mcp-server
 Official MCP server for the AgentOps SDK
