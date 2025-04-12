@@ -1,0 +1,31 @@
+[project]
+name = "mcp-server-agentops-api"
+version = "0.1.0"
+description = "A Model Context Protocol server for the AgentOps API"
+readme = "README.md"
+requires-python = ">= 3.10"
+authors = [{ name = "AgentOps" }]
+keywords = ["agentops", "analytics", "mcp", "llm", "monitoring"]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "httpx >= 0.25.0",
+    "mcp >= 1.1.3",
+    "pydantic >= 2.0.0",
+]
+
+[project.scripts]
+mcp-server-agentops-api = "mcp_server_agentops_api:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = ["pyright >= 1.1.389", "ruff >= 0.7.3"]
